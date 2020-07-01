@@ -25,9 +25,6 @@ class User {
 
   @UpdateDateColumn()
   updated_at: Date;
-
-  @Column('time without time zone')
-  date: Date;
 }
 
 export default User;
