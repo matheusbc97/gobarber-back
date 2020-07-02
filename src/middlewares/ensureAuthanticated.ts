@@ -31,7 +31,7 @@ export default function ensureAuthenticated(
       id: sub,
     };
 
-    return next(sub);
+    return next();
   } catch {
     throw new Error('Invalid JWT token');
   }
